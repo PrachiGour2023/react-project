@@ -21,25 +21,29 @@
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-const heading = React.createElement(
-  "h1",
-  {
-    key: 1,
-    id: "head",
-  },
-  "Namaste React"
+
+// JSX Expression (React Element)
+const para = <p>Namaste React</p>;
+
+// React Component
+const Heading2 = () => (
+  <h2 className="heading" key="6">
+    JSX Syntex
+  </h2>
 );
-const div = React.createElement(
-  "div",
-  {
-    key : 2,
-    className: "container",
-  },
-  [
-    React.createElement("p", { key: 1 }, "Paragraph Tag"),
-    React.createElement("span", { key: 2 }, "Span Tag"),
-  ]
-);
-console.log(div);
+
+// console.log(heading2)
+function HeaderComponent() {
+  return (
+    <div>
+      <h1>Helooo Compo</h1>
+      {Heading2()}
+      {para}
+      {(a=5,console.log(a))}
+    </div>
+  );
+}
+
+// console.log(HeaderComponent());
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render([heading, div]);
+root.render(<HeaderComponent />);
