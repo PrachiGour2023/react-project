@@ -264,6 +264,7 @@ const RestaurantCard = (props) => {
         <span>{costForTwo / 100} FOR TWO</span>
       </div>
       <hr />
+      <div className="quick-view">QUICK VIEW</div>
     </div>
   );
 };
@@ -279,9 +280,9 @@ const Body = () => {
 
 function Footer() {
   return (
-    <>
-      <h2>Footer</h2>
-    </>
+    <div className="footer">
+      <h3>@2023 Food Villa</h3>
+    </div>
   );
 }
 

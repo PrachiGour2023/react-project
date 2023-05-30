@@ -6,12 +6,19 @@
   margin: 0;
 }
 
+body {
+    padding: 0;
+    bottom: 0;
+    height: 100%;   
+}
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border: 1px solid #000;
 }
+
 .logo {
   width: 100px;
 }
@@ -23,6 +30,12 @@
 
 .header ul li {
   margin: 0px 30px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.header ul li:hover {
+    color: #fc8019;
 }
 
 .restaurant-card {
@@ -76,4 +89,22 @@
 
 hr {
     margin-top: 15px;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    height: 40px;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quick-view {
+    color: #5d8ed5;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
 }
