@@ -3,6 +3,9 @@ export const IMG_URL =
 
 export const CAROUSEL_CDN = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/";
 
+export const SEARCH_IMG_CDN = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/rng/md/carousel/production/";
+
+export const MENU_IMG = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/";
 // export const restaurantList = [
 //   {
 //     type: "F",

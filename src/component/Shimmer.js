@@ -16,11 +16,7 @@ const Shimmer = () => {
       {Array(15)
         .fill()
         .map((item, i) => {
-          return (
-            <>
-              <div className="shimmer-card" key={i}></div>
-            </>
-          );
+          return <div className="shimmer-card" key={i}></div>;
         })}
     </div>
   );

@@ -1,16 +1,14 @@
-import { restaurantList } from "../../constant";
-import RestaurantCard from "./RestaurantCard";
 import { useState, useEffect } from "react";
-import Shimmer from "./Shimmer";
 import Carousel from "./Carousel";
 import Restaurant from "./Restaurant";
+import Search from "./Search";
 
 const Body = () => {
-  const [searchInput, setSearchInput] = useState("");
+//   const [searchInput, setSearchInput] = useState(null);
   const [allRestaurants, setAllRestaurants] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
   const [carouselImages, setCarouselImages] = useState([]);
-  console.log(carouselImages);
+//   console.log(filteredData);
   useEffect(() => {
     getRestaurant();
   }, []);
@@ -25,29 +23,19 @@ const Body = () => {
     setCarouselImages(json?.data?.cards[0]?.data?.data?.cards);
   };
 
-  const filterData = () => {
-    const lowerString = searchInput.toLowerCase();
-    let filteredData = allRestaurants.filter((restaurant) => {
-      return restaurant.data.name.toLowerCase().includes(lowerString);
-    });
-    setFilteredData(filteredData);
-  };
+//   const filterData = () => {
+//     const lowerString = searchInput.toLowerCase();
+//     let filteredData = allRestaurants.filter((restaurant) => {
+//       return restaurant.data.name.toLowerCase().includes(lowerString);
+//     });
+//     setFilteredData(filteredData);
+//   };
 
+  const ComponentWithoutUI = (
+    <Search allRestaurants={allRestaurants} setFilteredData={setFilteredData} />
+  );
   return (
     <>
-      {/* <div className="search-container">
-        <input
-          type="text"
-          name="search"
-          placeholder="Search Here...."
-          className="input-search"
-          value={searchInput}
-          onChange={(e) => setSearchInput(e.target.value)}
-        />
-        <button className="btn-search" onClick={filterData}>
-          Search
-        </button>
-      </div> */}
       <div className="carousel">
         <Carousel carouselImages={carouselImages} />
       </div>

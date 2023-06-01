@@ -21,7 +21,9 @@ body {
 }
 
 .logo {
-  width: 100px;
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
 }
 
 .header ul {
@@ -205,4 +207,140 @@ hr {
     height: 72px;
     opacity: 0;
   }
+}
+
+.search-container {
+    border: 1px solid #c2bcbc;
+    width: 70%;
+    height: 50px;
+    margin: 50px auto;
+    border-radius: 3px;
+}
+
+.input-search {
+    border: none;
+    width: 90%;
+    height: 50px;
+    font-size: 16px;
+    padding: 0px 20px;
+    color: #535665;
+    font-weight: 600;
+}
+
+.input-search:focus {
+    border: none;
+    outline: none;
+}
+
+.search-img {
+    /* border: 1px solid #000; */
+    width: 70%;
+    margin: auto;
+}
+
+.search-img p {
+    color: #454547;
+    font-weight: 900;
+    font-size: 18px;
+    margin: 10px 0px;
+}
+
+.category {
+    width: 60px;
+    object-fit: cover;
+}
+
+.res-menu-container {
+    width: 60%;
+    /* border: 1px solid #000; */
+    margin: 30px auto;
+}
+
+.res-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5px;
+    border-bottom: 1px #b7bace dashed;
+}
+
+.res-data h4 {
+    font-size: 20px;
+    color: #222534;
+}
+
+.res-data span {
+    color: #7e808c;
+    font-size: 12px;
+}
+
+.res-rating {
+    border: 1px solid #d9d9e1;
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.res-rating h4 {
+    color: green;
+    border-bottom: 1px solid #aeafb1;
+    padding: 5px;
+}
+
+.res-rating p {
+    font-size: 10px;
+    font-weight: 500;
+    color: #303239;
+}
+
+.res-meal-time ul {
+    display: flex; 
+    list-style-type: none;  
+}
+
+.res-meal-time ul li {
+    margin: 15px 20px 20px 0px;
+    font-weight: 700;
+    color: #303239;
+    font-size: 14px;
+}
+
+.menu-item-block {
+    display: flex;
+    padding: 20px 0px;
+    border-bottom: 1px solid #9b9b9b;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item-block b {
+    color: rgb(217, 153, 35);
+    font-size: 14px;
+}
+
+.item-details {
+    width: fit-content;
+    text-align: justify;
+    padding: 10px;
+}
+
+.item-details p {
+    color: #303239;
+    font-weight: 500;
+}
+
+.item-details span {
+    color: #909094;
+    font-size: 13px;
+    /* margin: 10px 0px; */
+}
+
+.item-img img {
+    width: 130px;
+    border-radius: 5px;
+}
+
+.veg-img {
+    width: 15px;
+    margin: 0px 5px -3px 0px;
 }
